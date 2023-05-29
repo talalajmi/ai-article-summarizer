@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { copy, linkIcon, loader, tick } from "../assets";
 import { useLazyGetSummaryQuery } from "../services/article";
+import { toast } from "react-hot-toast";
 const Demo = () => {
   // ** States
   const [article, setArticle] = useState({
@@ -40,6 +41,7 @@ const Demo = () => {
   const handleCopy = (url) => {
     setCopied(url);
     navigator.clipboard.writeText(url);
+    toast.success("Copied to clipboard");
     setTimeout(() => {
       setCopied("");
     }, 3000);

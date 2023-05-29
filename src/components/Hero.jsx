@@ -9,7 +9,10 @@ const Hero = () => {
           type="button"
           className="black_btn"
           onClick={() => {
-            window.open("https://github.com", "_blank");
+            window.open(
+              "https://github.com/talalajmi/ai-article-summarizer",
+              "_blank"
+            );
           }}
         >
           GitHub
