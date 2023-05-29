@@ -103,7 +103,7 @@ const Demo = () => {
           <p className="text-center font-inter font-bold text-black">
             Well that wasn&apos;t supposed to happen... <br />{" "}
             <span className="font-satoshi font-normal text-gray-700">
-              {error?.data.message}
+              {error?.data.error}
             </span>
           </p>
         ) : (
